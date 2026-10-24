@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>iOS Alert — Interactive Message</title>
+<title>iOS</title>
 <style>
   :root { color-scheme: dark; --blue:#007aff; }
   * { box-sizing: border-box; }
@@ -77,23 +77,21 @@
       </div>
     </article>
   </section>
-  <div class="footer"><span>Interactive concept</span><span>Tap to continue →</span></div>
   <div class="home" aria-hidden="true"></div>
 </main>
 <script>
-  // Original sample messages; replace the title/message strings to personalize.
   const alerts = [
-    { title: "Something on your mind?", message: "There’s been a little distance lately.", buttons: ["Continue"] },
-    { title: "Message not sent.", message: "Maybe the words are harder to say than they seem.", buttons: ["Not now", "Try again"] },
-    { title: "Connection feels different.", message: "I miss when talking felt easy.", buttons: ["Continue"] },
-    { title: "Request for clarity.", message: "I’d rather hear the truth than guess what changed.", buttons: ["I understand"] },
-    { title: "Still listening.", message: "You can tell me what’s going on. I’ll listen.", buttons: ["Continue"] },
-    { title: "Busy schedule detected.", message: "Life gets overwhelming, and time can slip away.", buttons: ["I know"] },
-    { title: "A reminder.", message: "Being busy doesn’t always mean someone stopped caring.", buttons: ["Continue"] },
-    { title: "Unsent message.", message: "Some things stay on the mind long after the day ends.", buttons: ["Keep going"] },
-    { title: "No blame assigned.", message: "I just want to understand, not start another argument.", buttons: ["Continue"] },
-    { title: "One last thing.", message: "Even in the quiet, the good memories still matter.", buttons: ["Continue"] },
-    { title: "Message delivered.", message: "This was written with care. That’s all I wanted you to know.", buttons: ["Start over"] }
+    { title: "Something on your mind?", message: "Lately you've been busy, wondering if you miss me", buttons: ["Continue"] },
+    { title: "Message not sent.", message: "Why did you go against me? I just wanna know", buttons: ["Not now", "Try again"] },
+    { title: "Connection feels different.", message: "How come you act so different? Talk to me, I'll listen", buttons: ["Continue"] },
+    { title: "Request for clarity.", message: "All the love I'm giving", buttons: ["Continue"] },
+    { title: "Still listening.", message: "don't act like you don't know", buttons: ["Continue"] },
+    { title: "Busy schedule detected.", message: "I was out there on the road", buttons: ["Continue"] },
+    { title: "A reminder.", message: "life out of control", buttons: ["Continue"] },
+    { title: "Unsent message.", message: "She became a victim to my busy schedule", buttons: ["Oh no"] },
+    { title: "No blame assigned.", message: "And I know that it's not fair", buttons: ["Continue"] },
+    { title: "One last thing.", message: "that don't mean that I don't care", buttons: ["Continue"] },
+    { title: "Message delivered.", message: "This one's dedicated to the girl out there", buttons: ["Start over"] }
   ];
   let index = 0;
   const titleEl = document.getElementById("title");
